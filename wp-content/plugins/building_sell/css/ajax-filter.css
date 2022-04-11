@@ -1,0 +1,163 @@
+﻿#filter select,
+#filter select option {
+    padding: 2px 0;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+#filter select,
+#filter label,
+#filter select option {
+    font-size: 14px;
+    font-family: "Gotham Pro";
+    color: rgb(1, 1, 1);
+    text-transform: uppercase;
+    line-height: 1.286;
+    font-weight: bold;
+    padding: 2px;
+    margin: 3px;
+    border: none;
+    border-bottom: solid transparent 3px;
+    outline: none;
+}
+
+.filter-text {
+    font-size: 14px;
+    font-family: "Gotham Pro";
+    color: rgb(1, 1, 1);
+    text-transform: uppercase;
+    line-height: 1.286;
+    font-weight: bold;
+}
+
+#filter select options {
+    text-align: right;
+    display: block;
+}
+
+#filter input[type="checkbox"],
+#filter input[type="radio"] {
+    display: none;
+}
+
+#filter label:before {
+    content: "";
+    display: inline-block;
+    border-width: 3px;
+    border-color: rgb(114, 164, 241);
+    border-style: solid;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    visibility: visible;
+    cursor: pointer;
+    background-image: none;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+#filter input[type="checkbox"]:checked+label:before,
+#filter input[type="radio"]:checked+label:before {
+    background-image: url(../images/cross.svg);
+}
+
+#filter input#reset[type="checkbox"]:active+label:before {
+    background-image: url(../images/cross.svg);
+}
+
+#filter input+label span.label_icon,
+#tranings_container span.label_icon,
+#directions_container span.label_icon,
+#schoolchildren_container span.label_icon {
+    display: inline-block;
+    width: 20px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+#filter input+label[for="students"] span.label_icon {
+    background-image: url(../images/student_icon.png);
+}
+
+#filter input+label[for="summer_camp"] span.label_icon {
+    background-image: url(../images/camp_icon.png);
+    height: 24px;
+}
+
+#filter input+label[for="admission_is_going"] span.label_icon {
+    background-image: url(../images/intrance_icon.png);
+    height: 24px;
+}
+
+#filter input+label[for="popular_d"] span.label_icon {
+    background-image: url(../images/customer_icon.png);
+}
+
+#filter input+label[for="date_d"] span.label_icon {
+    background-image: url(../images/clock_icon.png);
+}
+
+#filter #tranings_container span.label_icon {
+    background-image: url(../images/training_icon.png);
+}
+
+#filter #directions_container span.label_icon {
+    background-image: url(../images/direction_icon.png);
+    width: 30px;
+}
+
+#filter #schoolchildren_container span.label_icon {
+    background-image: url(../images/schoolchild_icon.png);
+}
+
+#filter input+label[for="reset"] span.label_icon {
+    background-image: url(../images/reset_icon.png);
+}
+
+#schoolchildren {
+    width: 110px;
+}
+
+#directions {
+    width: 125px;
+}
+
+#tranings {
+    width: 90px;
+}
+
+#response {
+    margin: 40px auto;
+    text-align: center;
+}
+
+#filter {
+    margin: 0 auto;
+}
+
+#filter select:hover {
+    border-bottom: solid #75a6f2 3px;
+    box-sizing: border-box;
+}
+
+#filter label:hover,
+#filter span:hover {
+    border-bottom: none;
+}
+
+#filter span.label_icon+span:hover {
+    border-bottom: solid #75a6f2 3px;
+}
+
+.al_right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
